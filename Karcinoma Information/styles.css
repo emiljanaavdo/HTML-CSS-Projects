@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #f4f4f4;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+    overflow-y: auto;
+  }
+  #navbar header {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  #navbar .nav-link {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 4px;
+  }
+  #navbar .nav-link:hover {
+    background-color: #ddd;
+  }
+  #main-doc {
+    margin-left: 260px;
+    padding: 20px;
+  }
+  @media (max-width: 768px) {
+    #navbar {
+      position: relative;
+      width: 100%;
+      height: auto;
+      border-right: none;
+      border-bottom: 1px solid #ddd;
+    }
+    #main-doc {
+      margin-left: 0;
+    }
+  }
